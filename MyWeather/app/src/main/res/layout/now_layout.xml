@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未确定"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x月x日,星期x xx:xx"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_weaicon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            />
+        <TextView
+
+            android:gravity="center_vertical"
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x°c"
+            android:textSize="35sp"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AQI xxx(轻度)"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxx"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
