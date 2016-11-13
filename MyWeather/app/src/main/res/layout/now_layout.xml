@@ -9,7 +9,7 @@
         android:id="@+id/tv_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="未确定"
+        android:text="正在加载"
         android:textSize="22sp"
         android:textColor="#fff"
         android:layout_gravity="center_horizontal"

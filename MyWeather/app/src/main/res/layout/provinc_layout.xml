@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout_start_with"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="0dp" >
+
+                <Button
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/btn_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/address_button"
+                    android:text="省份"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/btn_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/address_button"
+                    android:text="城市"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/btn_county"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/address_button"
+                    android:text="区县"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <com.chenapp.ui.MyGridView
+                android:layout_margin="10dp"
+                android:background="@drawable/grid_item_bg"
+                android:id="@+id/gridview_start_with0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt_address_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:text="确            定"
+                android:background="@drawable/address_button"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
